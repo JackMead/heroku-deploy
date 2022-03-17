@@ -21,6 +21,8 @@ jobs:
           release_name: Release ${{ github.ref }}
       - name: Extract version from tag
         uses: damienaicheh/extract-version-from-tag-action@v1.0.0
+      - name: echo
+        run: echo $MAJOR
       - name: Move the latest major version tag
         uses: rickstaa/action-create-tag@v1
         with:
