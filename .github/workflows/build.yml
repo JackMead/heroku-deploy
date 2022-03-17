@@ -26,3 +26,4 @@ jobs:
         with:
           tag: v${{ env.MAJOR }}
           message: "Move the latest major version"
+          force_push_tag: True
