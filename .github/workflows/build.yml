@@ -24,5 +24,5 @@ jobs:
       - name: Move the latest major version tag
         uses: rickstaa/action-create-tag@v1
         with:
-          tag: v$MAJOR
+          tag: "v${MAJOR}"
           message: "Move the latest major version"
